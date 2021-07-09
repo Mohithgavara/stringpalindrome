@@ -1,0 +1,27 @@
+import java.util.*;
+class strpalindrome
+{
+public static void main(String args[])
+{
+int i,k,j=0,c=0;
+String str;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter string");
+str=sc.next();
+char ch[]=str.toCharArray();
+k=ch.length-1;
+for(i=0;i<ch.length/2;i++)
+{
+if(ch[j]==ch[k])
+{
+j++;
+k--;
+c++;
+}
+}
+if(c==ch.length/2)
+System.out.println("it is palindrome");
+else
+System.out.println("it is not palindrome");
+}
+}
